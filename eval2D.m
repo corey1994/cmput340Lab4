@@ -2,8 +2,8 @@
 
 %This code is available in eval2D.m
 % make sure you define n and mode
-n = 10;
-mode = 1;
+n = 10000;
+mode = 0;
 
 ls=[0.5,0.5]';
 t=rand(2,1); %Choose some random starting point.
