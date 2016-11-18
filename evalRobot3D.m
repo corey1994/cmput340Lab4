@@ -26,7 +26,7 @@ end
 
 %Calculates one column of the jacobian matrix
 function Jx = calculateJCol(M, theta, colNum)
-alpha = 0.01;
+alpha = 0.0001;
 alphaVector = zeros(size(theta));
 alphaVector(colNum) = alpha;
 
