@@ -1,3 +1,5 @@
+%Returns the matrix for a rotation about the z-axis, 
+%given rotation angle theta
 function result = Rz(theta)
 
 result = [cos(theta) -sin(theta) 0 0

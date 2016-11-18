@@ -1,5 +1,6 @@
 function theta = invKin2D(l,theta0,pos,n,mode)
 
+%Sets the desired size of the residual
 threshold = 0.00001;
 
 if mode == 0    
@@ -11,9 +12,8 @@ end
 
 function theta = newton(l,theta,pos,n,threshold)
     
+    %Iterate a maximum of n times (specified by caller)
     for i = 1:n
-        %while(residual_large && i < n):
-        %s = -jacobian \ f(x)
         jacobian = fdJacob2D(l,theta);
         fx = evalRobot2D(l,theta) - pos;
         s = -jacobian\fx;

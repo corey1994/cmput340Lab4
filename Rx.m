@@ -1,3 +1,5 @@
+%Returns the matrix for a rotation about the x-axis, 
+%given rotation angle theta
 function result = Rx(theta)
 
 result = [1 0 0 0

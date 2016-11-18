@@ -1,6 +1,6 @@
 function J = fdJacob2D(l,theta,alpha)
 if(nargin<3)
-    alpha = 0.0001;
+    alpha = 0.0000001;
 end
 
 J1 = (evalRobot2D(l,theta+[alpha;0])-evalRobot2D(l,theta-[alpha;0]))/(2*alpha);

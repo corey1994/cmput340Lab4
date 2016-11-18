@@ -1,6 +1,6 @@
 addpath /cshome/vis/data;
 load human_data;
-load walk1;
+load walk5;
 robot3D('new');
 
 thetaL = [-pi/8;0;-pi/16;pi/4];
@@ -12,6 +12,6 @@ for i = 1:size(L,2)
     thetaR = invKin3D(Mr , thetaR, R(:,i));
     theta = [thetaL; thetaR];
     robot3D(humanInterp(drad, theta));
-    pause(0.25);
+    pause(0.05);
 
 end
