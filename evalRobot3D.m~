@@ -17,6 +17,7 @@ end
 
 % Calculate the position using the function
 % given in the assignment
+
 function pos = calculatePosition(M, theta)
 
 pos = M{1}*Rz(theta(3))*Ry(theta(2))*Rx(theta(1)) ...
