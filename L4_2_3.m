@@ -1,10 +1,10 @@
 addpath /cshome/vis/data;
 load human_data;
-load walk2;
+load walk1;
 robot3D('new');
 
-thetaL = [0;0;0;0];
-thetaR = [0;0;0;0];
+thetaL = [-pi/8;0;-pi/16;pi/4];
+thetaR = [-pi/8;0;pi/16;pi/4];
 %For each column in the data
 for i = 1:size(L,2)
 
