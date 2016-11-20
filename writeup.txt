@@ -1,6 +1,6 @@
 Part 1
 
-2. While the analytical jacobian is obviously more accurate, some simple analysis showed that the central differences jacobian contained small error when the value for alpha was small enough. 
+2. While the analytical jacobian is obviously more accurate, some simple analysis shows that the central differences jacobian contained small error when the value for alpha was small enough. 
 
 Using alpha = 0.0000001, the largest difference I was able to find was at theta = [pi,pi]', at which the difference in the jacobian was equal to
 [0.0000, 0.0000; 0.4441 E-08, 0.6077 E-08].
@@ -17,7 +17,10 @@ pos = [0,0]'
 n = 10
 
 Time:
-Newton took about 0.07 milliseconds longer than Broyden.
+Broyden took about 0.1 milliseconds longer than Newton.
 
 Residual:
-The two methods obtained a similar residual (difference of 9E-17). 
+The two methods obtained a similar residual (difference of 2E-16). Again, Newton method came out slightly ahead. 
+
+I tried a couple of different number as well, and most of the time Newton was more time efficient, and more accurate.  However, the differences were very minor.
+

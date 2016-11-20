@@ -1,5 +1,0 @@
-%Test the effect of mode, testing the residual and the time.
-tic
-i = 1:20
-x = 1
-toc

@@ -25,6 +25,9 @@ pos = M{1}*Rz(theta(3))*Ry(theta(2))*Rx(theta(1)) ...
 end
 
 %Calculates one column of the jacobian matrix
+%using central differences
+%I chose this approach because deriving the analytical
+%version in this case would be quite complex.
 function Jx = calculateJCol(M, theta, colNum)
 alpha = 0.0001;
 alphaVector = zeros(size(theta));

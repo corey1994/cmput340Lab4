@@ -1,7 +1,7 @@
 %Test the effect of mode, testing the residual and the time.
 l = [1,1];
-theta0 = [pi/2,pi/2]';
-pos = [0,0]';
+theta0 = [pi/4,pi/4]';
+pos = [3,3]';
 n = 10;
 
 f = @() invKin2D(l, theta0, pos, n, 0);
