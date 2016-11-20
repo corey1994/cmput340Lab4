@@ -1,0 +1,23 @@
+Part 1
+
+2. While the analytical jacobian is obviously more accurate, some simple analysis showed that the central differences jacobian contained small error when the value for alpha was small enough. 
+
+Using alpha = 0.0000001, the largest difference I was able to find was at theta = [pi,pi]', at which the difference in the jacobian was equal to
+[0.0000, 0.0000; 0.4441 E-08, 0.6077 E-08].
+
+Thus, the central differences jacobian will definitely be accurate enough for our needs, although the analytical jacobian is preferred when possible.
+
+The finite differences jacobian may be used when the analytical jacobian is complicated or difficult to compute (as in part 2 of this assignment).  It may also be used if the functions in the analytical jacobian are unstable and prone to error.
+
+
+4. The tests comparing Newton to Broyden were done with the following data:
+l = [1,1]'
+theta0 = [pi/2,pi/2]'
+pos = [0,0]'
+n = 10
+
+Time:
+Newton took about 0.07 milliseconds longer than Broyden.
+
+Residual:
+The two methods obtained a similar residual (difference of 9E-17). 
